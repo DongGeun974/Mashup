@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project_3</title>
+    <!-- 부트스트랩 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- 구글 맵 -->
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=googleapis" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="project_3.css">
+    <script src="project_3.js"></script>
+</head>
+<body>
+    <!-- 학번_이름 -->
+    <p>2016250056_황동근</p>
+
+    <!-- 부트스트랩 점보프톤 -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <center><h1>서울 공원 찾기</h1></center>
+        </div>
+    </div>
+
+    <!-- 부트스트랩 컨테이너 -->
+    <div class="container-fluid" id="main">
+        
+        <!-- 구글 맵 -->
+        <center><div id="map">
+        </div></center>
+
+        <!-- 지역 입력 -->
+        <label>지역을 선택하세요 : </label><select id="location"></select>
+        <input type="button" id="search" value="search">
+
+        <!-- 공원 데이터 -->
+        <div id="data">
+        </div>
+    </div>
+</body>
+</html>
